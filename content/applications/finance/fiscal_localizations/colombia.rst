@@ -5,14 +5,24 @@ Colombia
 .. |DIAN| replace:: :abbr:`DIAN (Dirección de Impuestos y Aduanas Nacionales)`
 
 Odoo's Colombian localization package provides accounting, fiscal, and legal features for databases
-in Colombia – such as chart of accounts, taxes, and electronic invoicing.
+in Colombia – such as chart of accounts, taxes, and electronic invoicing.The localization has the 
+next `prerequisites <https://micrositios.dian.gov.co/sistema-de-facturacion-electronica/que-requieres
+-para-factura-electronicamente/>`_ when using the `DIAN Own Software <hhttps://micrositios.dian.gov.
+co/sistema-de-facturacion-electronica/como-puedes-facturar-electronicamente/>`_ solution with Odoo:
 
-In addition, a series of videos on the subject is also available. These videos cover how to start
-from scratch, set up configurations, complete common workflows, and provide in-depth looks at some
-specific use cases as well.
+- Be registered in the `RUT <https://www.dian.gov.co/tramitesservicios/tramites-y-servicios/tributarios
+/Paginas/RUT.aspx>`_ (Registro Único Tributario) with a valid NIT.
+- Have a valid Digital Signature Certificate `approved by the ONAC <https://onac.org.co/directorio-de-
+acreditados/>`_.
+-`Register and get enabled <https://micrositios.dian.gov.co/sistema-de-facturacion-electronica/proceso
+-de-registro-y-habilitacion-como-facturador-electronico/>`_ by completing the Certification Process 
+required by the DIAN.
 
 .. seealso::
-   `Smart Tutorial - Colombian Localization
+   - For more information on how to complete the Certification process for the DIAN module, review the 
+   following `Webinar <https://micrositios.dian.gov.co/sistema-de-facturacion-electronica/proceso
+   -de-registro-y-habilitacion-como-facturador-electronico/>`_.
+   - `Smart Tutorial - Colombian Localization
    <https://www.odoo.com/slides/smart-tutorial-localizacion-de-colombia-132>`_.
 
 .. _colombia/configuration:
@@ -38,17 +48,17 @@ localization:
      - Default :ref:`fiscal localization package <fiscal_localizations/packages>`. This module adds
        the base accounting features for the Colombian localization: chart of accounts, taxes,
        withholdings, and identification document type.
+   * - :guilabel:`Electronic invoicing for Colombia with DIAN`
+     - `l10n_co_dian`
+     - This module includes the features required for integration with the DIAN as an own software, Adds
+       the ability to generate electronic invoices and support documents based on |DIAN| regulations.
    * - :guilabel:`Colombian - Accounting Reports`
      - `l10n_co_reports`
      - Includes accounting reports for sending certifications to suppliers for withholdings applied.
    * - :guilabel:`Electronic invoicing for Colombia with Carvajal`
      - `l10n_co_edi`
-     - This module includes the features required for integration with Carvajal, and
-       generates the electronic invoices and support documents related to the vendor bills, based on
-       |DIAN| regulations.
-   * - :guilabel:`Colombian - Point of Sale`
-     - `l10n_co_pos`
-     - Includes Point of Sale receipts for Colombian localization.
+     - This module includes the features required for integration with Carvajal. Adds the ability to
+       generate the electronic invoices and support documents, based on |DIAN| regulations.
 
 .. note::
    When `Colombia` is selected for a company's :guilabel:`Fiscal Localization`, Odoo automatically
@@ -83,33 +93,54 @@ Next, configure the :guilabel:`Fiscal Information` in the :guilabel:`Sales & Pur
 - :guilabel:`Commercial Name`: If the company uses a specific commercial name, and it needs to be
   displayed in the invoice.
 
-Carjaval credentials configuration
-----------------------------------
+Electronic Invoice Credentials configuration
+--------------------------------------------
 
 Once the modules are installed, the user credentials **must** be configured, in order to connect
-with Carvajal Web Service. To do so, navigate to :menuselection:`Accounting --> Configuration -->
+with DIAN’s Web Service. To do so, navigate to :menuselection:`Accounting --> Configuration -->
 Settings` and scroll to the :guilabel:`Colombian Electronic Invoicing` section. Then, fill in the
-required configuration information provided by Carvajal:
+required configuration:
 
-- :guilabel:`Username` and :guilabel:`Password`: Username and password (provided by Carvajal) to the
-  company.
-- :guilabel:`Company Registry`: Company's NIT number *without* the verification code.
-- :guilabel:`Account ID`: Company's NIT number followed by `_01`.
-- :guilabel:`Colombia Template Code`: Select one of the two available templates (`CGEN03` or
-  `CGNE04`) to be used in the PDF format of the electronic invoice.
+- Select :guilabel:`DIAN: Free Service` as the :guilabel:`Electronic Invoicing Provider`
+- Configure the :guilabel:`Operation Mode(s)`: for the respective type(s) of document(s) to be 
+generated from Odoo. For each type of document (Electronic Invoices or Support Documents) the next 
+fields are required:
+  #. :guilabel:`Software Mode`: Type of document to be generated with the operation mode.
+  #. :guilabel:`Software ID`: ID generated by DIAN for the specific operation mode.
+  #. :guilabel:`Software PIN`: PIN selected in the operation mode configuration in the DIAN portal
+  #. :guilabel:`Testing ID`: Testing identification generated by DIAN and obtained from the testing 
+  set of the operation mode
+- Enter  your available **digital certificate** to sign your electronic documents:
+  #. Both **Certificate** and **Certificate Key** must be in PEM format.
+  
+.. image:: colombia/dian-credentials-configuration.png
+   :align: center 
+   :alt: Colombian Electronic Invoicing credentials configured
+   
+.. note::
+   In a multi-company database it is possible to have one certificate per company.
 
-Enable the :guilabel:`Test mode` checkbox to connect with the Carvajal testing environment.
+DIAN Environments Configuration  
+-------------------------------
 
-Once Odoo and Carvajal are fully configured and ready for production, deactivate the :guilabel:`Test
-mode` checkbox to use the production database.
+The DIAN Electronic Invoicing module offers three different DIAN environments to connect with:
 
-.. image:: colombia/carvajal-configuration.png
-   :align: center
-   :alt: Configure credentials for Carvajal web service in Odoo.
+- :guilabel:`Certification Environment`: This environment will be useful to pass the DIAN certification 
+  process and obtain the enabled status to invoice from Odoo. To activate it, go to  
+  :menuselection:`Accounting --> Configuration --> Settings` and enable both the *Test Environment* and  
+  the *Activate the certification process* checkboxes.
 
-.. important::
-   :guilabel:`Test mode` must **only** be used on duplicated databases, **not** the production
-   environment.
+- :guilabel:`Testing Environment`: This environment allows reproducing Electronic Invoicing flows and 
+  validations in the DIAN testing portal. To activate it, go to :menuselection:`Accounting --> 
+  Configuration --> Settings` and check the *Test Environment* checkbox only.
+
+- :guilabel:`Production Environment`: Activate production databases to generate valid electronic documents.  
+  To activate it, go to :menuselection:`Accounting --> Configuration --> Settings` and disable both  
+  the *Test Environment* and the *Activate the certification process* checkboxes.
+
+.. seealso::  
+   For Electronic Invoicing Configurations using the Carvajal solution, review the following  
+   `video <https://www.youtube.com/watch?v=bzweMwTEbfY&list=PL1-aSABtP6ABxZshems3snMjx7bj_7ZsZ&index=3>`_.
 
 Report data configuration
 -------------------------
@@ -199,9 +230,9 @@ If sales transactions include products with taxes, the :guilabel:`Value Type` fi
 (:guilabel:`ICA`, :guilabel:`IVA`, :guilabel:`Fuente`) are also included. This configuration is used
 to display taxes correctly in the invoice PDF.
 
-.. image:: colombia/retention-tax-types.png
-   :align: center
-   :alt: The ICA, IVA and Fuente fields in the Advanced Options tab in Odoo.
+.. image:: colombia/DIAN-taxes-configuration.png
+   :align: center 
+   :alt: Specific tax configurations per DIAN regulations
 
 .. _co-journals:
 
@@ -217,16 +248,26 @@ On the sales journal form, input the :guilabel:`Journal Name`, :guilabel:`Type`,
 :guilabel:`Short Code` in the :guilabel:`Journals Entries` tab. Then, configure the following data
 in the :guilabel:`Advanced Settings` tab:
 
-- :guilabel:`Electronic invoicing`: Enable :guilabel:`UBL 2.1 (Colombia)`.
-- :guilabel:`Invoicing Resolution`: Resolution number issued by |DIAN| to the company.
-- :guilabel:`Resolution Date`: Initial effective date of the resolution.
-- :guilabel:`Resolution end date`: End date of the resolution's validity.
-- :guilabel:`Range of Numbering (minimum)`: First authorized invoice number.
-- :guilabel:`Range of Numbering (maximum)`: Last authorized invoice number.
+-:guilabel:`Electronic invoicing`: Enable UBL 2.1 (Colombia).
+-:guilabel:`Invoicing Resolution`: Resolution number issued by DIAN to the company via their test set.
+-:guilabel:`Resolution Date`: Initial effective date of the resolution.
+-:guilabel:`Resolution End Date`: End date of the resolution’s validity.
+-:guilabel:`Range of Numbering (minimum)`: First authorized invoice number.
+-:guilabel:`Range of Numbering (maximum)`: Last authorized invoice number.
+-:guilabel:`Technical Key`: Control key received from the DIAN portal test set or from their web service 
+in case of the production environment.
 
-.. note::
-   The sequence and resolution of the journal **must** match the one configured in Carvajal and the
-   |DIAN|.
+When the database is configured for the **production environment**, instead of configuring these fields 
+manually, use the **Reload DIAN configuration** button to obtain the DIAN Resolution information from the required 
+DIAN web service.
+
+.. image:: colombia/Reload-DIAN-configuration-button.png
+   :align: center 
+   :alt: Reload DIAN configuration button in Sale Journals
+
+.. important::
+   The short code and resolution of the journal **must** match the ones received in the DIAN portal test set 
+   or from the **MUISCA** portal.
 
 Invoice sequence
 ****************
@@ -242,6 +283,10 @@ Purchase journals
 Once the |DIAN| has assigned the official sequence and prefix for the *support document* related to
 vendor bills, the purchase journals related to their supporting documents need to be updated in
 Odoo. The process is similar to the configuration of the :ref:`sales journals <co-journals>`.
+
+.. seealso::  
+   For more information on Support Document Journals using the Carvajal solution review the following
+   `video <https://www.youtube.com/watch?v=UmYsFcD7xzE&list=PL1-aSABtP6ABxZshems3snMjx7bj_7ZsZ&index=8>`_.
 
 Chart of accounts
 *****************
@@ -259,24 +304,18 @@ Main workflows
 Electronic invoices
 -------------------
 
-The following is a breakdown of the main workflow for electronic invoices with the Colombian
-localization:
+The following is a breakdown of the main workflow for electronic invoices with the Colombian localization:
 
-#. Sender creates an invoice.
-#. Electronic invoice provider generates the legal XML file.
-#. Electronic invoice provider creates the CUFE (Invoice Electronic Code) with the electronic
-   signature.
-#. Electronic invoice provider sends a notification to |DIAN|.
-#. |DIAN| validates the invoice.
-#. |DIAN| accepts or rejects the invoice.
-#. Electronic invoice provider generates the PDF invoice with a QR code.
-#. Electronic invoice provider sends invoice to the acquirer.
-#. Acquirer sends a receipt of acknowledgement, and accepts or rejects the invoice.
-#. Sender downloads a :file:`.zip` file with the PDF and XML.
-
-.. image:: colombia/workflow-electronic-invoice.png
-   :align: center
-   :alt: Electronic invoice workflow for Colombian localization.
+1. Sender creates an invoice.
+2. Odoo generates the legal XML file.
+3. Odoo generates the CUFE (Invoice Electronic Code) with the electronic signature.
+4. Odoo sends a notification to DIAN.
+5. DIAN validates the invoice.
+6. DIAN accepts or rejects the invoice.
+7. Odoo generates the PDF invoice with a QR code.
+8. Odoo compresses the AttachedDocument (containing the sent XML file and the DIAN validation response) 
+and the fiscal valid PDF into a :file:`.zip` file
+9. User sends the invoice (:file:`.zip` file) via Odoo to the acquirer.
 
 .. _colombia/invoice-creation:
 
@@ -287,58 +326,59 @@ Invoice creation
    The functional workflow taking place before an invoice validation does **not** alter the main
    changes introduced with the electronic invoice.
 
-Electronic invoices are generated and sent to both the |DIAN| and customer through Carvajal's web
-service integration. These documents can be created from your sales order or manually generated. To
-create a new invoice, go to :menuselection:`Accounting --> Customers --> Invoices`, and select
-:guilabel:`Create`. On the invoice form configure the following fields:
+Electronic invoices are generated and sent to both the |DIAN| and customer. These documents can be created 
+from your sales order or manually generated. To create a new invoice, go to 
+:menuselection:`Accounting --> Costumers --> Invoices`, and select **Create**. On the invoice form configure 
+the following fields:
 
-- :guilabel:`Customer`: Customer's information.
-- :guilabel:`Journal`: Journal used for electronic invoices.
-- :guilabel:`Electronic Invoice Type`: Select the type of document. By default, :guilabel:`Factura
-  de Venta` is selected.
-- :guilabel:`Invoice Lines`: Specify the products with the correct taxes.
+-:guilabel:`Customer`: Customer’s information.
+-:guilabel:`Journal`: Journal used for electronic invoices.
+-:guilabel:`Electronic Invoice Type`: Select the type of document. By default, Factura de Venta is selected.
+-:guilabel:`Invoice Lines`: Specify the products with the correct taxes.
+
+.. important::
+   When creating the first invoice related to an Electronic Invoicing Journal, it is required to manually change the 
+   **sequence** of the invoice to the DIAN format corresponding to the `Prefix + Sequence`.
+   **Example**: From `SETP1/2024/00001` to `SETP1`
 
 When done, click :guilabel:`Confirm`.
 
 .. _colombia/invoice-validation:
 
-Invoice validation
-~~~~~~~~~~~~~~~~~~
+Sending Electronic Invoices
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After the invoice confirmation, an XML file is created and sent automatically to Carvajal. The
-invoice is then processed asynchronously by the E-invoicing service UBL 2.1 (Colombia). The file is
-also displayed in the chatter.
+After the invoice confirmation, click on the **Print & Send** button. In the appearing wizard, make sure to enable the 
+**DIAN** and **Email** checkboxes to send an XML to the DIAN web service and the validated invoice to your client 
+fiscal email. After that, click on the Print & Send button:
 
-.. image:: colombia/invoice-sent.png
-   :align: center
-   :alt: Carvajal XML invoice file in Odoo chatter.
+- The XML document is created
+- CUFE is generated
+- The XML is processed synchronously by the DIAN. 
+- If accepted, the file is displayed in the chatter and also the email to the client with the corresponding 
+:file:`.zip` file.
 
-The :guilabel:`Electronic Invoice Name` field is now displayed in the :guilabel:`EDI Documents` tab,
-with the name of the XML file. Additionally, the :guilabel:`Electronic Invoice Status` field is
-displayed with the initial value :guilabel:`To Send`. To process the invoice manually, click on the
-:guilabel:`Process Now` button.
+.. image:: colombia/zip-xml-chatter-colombia.png
+   :align: center 
+   :alt: EDI documents available in the chatter
+   
+The **DIAN tab** will now displayed and the next information will be available in the record shown:
 
-.. _colombia/invoice-xml:
+-:guilabel:`Signed Date`: Timestamp recorded of the XML creation.
+-:guilabel:`Status`: The status result obtained in the DIAN response. If the invoice was rejected, the 
+error messages can be seen here.
+-:guilabel:`Testing Environment`: This checkbox will let us know if the document sent was delivered to 
+the DIAN testing environment.
+-:guilabel:`Certification Process`: This checkbox will let us know if the document was sent as part of 
+the certification process with the DIAN.
+-:guilabel:`Download button`: With this button, it is possible to download the sent XML file, even if 
+the DIAN result was “Rejected”.
+-:guilabel:`Fetch Attached Document button`: With this button, it is possible to download the 
+generated AttachedDocument file, even if the DIAN.
 
-Reception of legal XML and PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The electronic invoice vendor (Carvajal) receives the XML file, and proceeds to validate its
-structure and information.
-
-After validating the electronic invoice, proceed to generate a legal XML which includes a digital
-signature and a unique code (CUFE), a PDF invoice that includes a QR code and the CUFE is also
-generated. If everything is correct the :guilabel:`Electronic Invoicing` field value changes to
-:guilabel:`Sent`.
-
-A :file:`.zip` containing the legal electronic invoice (in XML format) and the invoice in (PDF
-format) is downloaded and displayed in the invoice chatter:
-
-.. image:: colombia/invoice-zip.png
-   :align: center
-   :alt: ZIP file displayed in the invoice chatter in Odoo.
-
-The electronic invoice status changes to :guilabel:`Accepted`.
+.. image:: colombia/dian-tab-electronic-document.png
+   :align: center 
+   :alt: EDI document record available in DIAN tab
 
 Credit notes
 ------------
@@ -406,11 +446,21 @@ During the XML validation, the most common errors are related to missing master 
 ID*, *Address*, *Products*, *Taxes*). In such cases, error messages are shown in the chatter after
 updating the electronic invoice status.
 
-After the master data is corrected, it's possible to reprocess the XML with the new data and send
-the updated version, using the :guilabel:`Retry` button.
+.. image:: colombia/validation-error-example-DIAN.png
+   :align: center 
+   :alt: Validation error example before sending electronic documents to the DIAN
 
-.. image:: colombia/xml-validation-error.png
-   :alt: XML validation errors shown in the invoice chatter in Odoo.
+If the invoice was sent and set as **Rejected** by the DIAN, the error messages are visible clicking in 
+the **“i”** symbol next to the **Status** field in the **DIAN tab**. Using the reported error codes, it will be 
+possible to review solutions to apply before re-sending.
+
+.. image:: colombia/rejected-invoice-error-message.png
+   :align: center 
+   :alt: Example of error messages on rejected invoices
+
+After the master data or other issues are corrected, it’s possible to reprocess the XML following again the 
+:doc:`Sending Electronic Invoices <documentation/content/applications/finance/fiscal_localizations/colombia
+/main_workflow/electronic_invoices/sending_electronic_invoices>` flow.
 
 .. _colombia/reports:
 
