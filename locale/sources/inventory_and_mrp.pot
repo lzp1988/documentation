@@ -8,7 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 17.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< 17.0
 "POT-Creation-Date: 2024-10-07 08:27+0000\n"
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+"POT-Creation-Date: 2024-09-24 08:53+0000\n"
+=======
+"POT-Creation-Date: 2024-11-04 08:54+0000\n"
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,9 +276,15 @@ msgstr ""
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/label_type.rst:13
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/labels.rst:16
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/multipack.rst:11
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/starshipit_shipping.rst:104
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:60
 #: ../../content/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/cycle_counts.rst:15
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:58
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:55
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 #: ../../content/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/use_locations.rst:8
 #: ../../content/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/warehouses.rst:13
 #: ../../content/applications/inventory_and_mrp/inventory/warehouses_storage/replenishment.rst:56
@@ -9609,7 +9621,17 @@ msgid ":guilabel:`Website`: configure shipping methods for an e-commerce page. S
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration.rst:64
+<<<<<<< 17.0
 msgid ":guilabel:`Company`: If the shipping method should apply to a specific company, select it from the drop-down menu. Leave the field blank to apply the method to all companies."
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/invoicing.rst:43
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:130
+msgid ":guilabel:`Company`: if the shipping method should apply to a specific company, select it from the drop-down menu. Leave the field blank to apply the method to all companies."
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/invoicing.rst:43
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:127
+msgid ":guilabel:`Company`: if the shipping method should apply to a specific company, select it from the drop-down menu. Leave the field blank to apply the method to all companies."
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration.rst:66
@@ -9847,8 +9869,16 @@ msgstr ""
 msgid "Show delivery order on the sales order line."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration.rst:261
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:264
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration.rst:209
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:262
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration.rst:209
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:259
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Delivery order"
 msgstr ""
 
@@ -11353,7 +11383,13 @@ msgid "Odoo integration of Sendcloud works on free Sendcloud plans *only* if a b
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/sendcloud_shipping.rst:37
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:184
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:182
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:179
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Warehouse configuration"
 msgstr ""
 
@@ -12091,7 +12127,7 @@ msgid "All"
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:33
-msgid ":doc:`DHL Express* <dhl_credentials>`"
+msgid ":doc:`DHL Express <dhl_credentials>`"
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:35
@@ -12111,7 +12147,7 @@ msgid ":doc:`Sendcloud <sendcloud_shipping>`"
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:40
-msgid ":ref:`EU** <inventory/shipping_receiving/sendcloud-eu>`"
+msgid "Some European countries (see details below)"
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:41
@@ -12138,59 +12174,135 @@ msgstr ""
 msgid "India"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:47
 msgid ":doc:`Starshipit <starshipit_shipping>`"
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:48
 msgid "Australasia"
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:52
+msgid "\\* Other services from DHL are **not** supported."
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:49
+msgid "Other services from DHL are **not** supported."
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:54
 msgid "\\* Other services from DHL are **not** supported."
 msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:56
 msgid "** Sendcloud currently supports shipping **from** Austria, Belgium, France, Germany, Italy, the Netherlands, Spain, and the United Kingdom, and **to** any European country."
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:54
+msgid "** Sendcloud currently supports shipping **from** Austria, Belgium, France, Germany, Italy, the Netherlands, Spain, and the United Kingdom, and **to** any European country."
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:51
+msgid "Sendcloud currently supports shipping **from** Austria, Belgium, France, Germany, Italy, the Netherlands, Spain, and the United Kingdom, and **to** any European country."
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:62
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:60
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:57
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "To ensure proper setup of a third-party shipping carrier with Odoo, follow these steps:"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:64
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:62
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:59
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":ref:`Install the shipping connector <inventory/shipping_receiving/shipping-connector>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:65
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:63
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:60
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":ref:`Set up delivery method <inventory/shipping_receiving/configure-delivery-method>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:66
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:64
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:61
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":ref:`Activate production environment <inventory/shipping_receiving/production-env>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:67
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:65
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:62
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":ref:`Configure warehouse <inventory/shipping_receiving/configure-source-address>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:68
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:66
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:63
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":ref:`Specify weight of products <inventory/shipping_receiving/configure-weight>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:73
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:71
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:68
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Install shipping connector"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:75
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:73
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:70
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "To install shipping connectors, go to :menuselection:`Inventory app --> Configuration --> Settings`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:77
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:75
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:72
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Under the :guilabel:`Shipping Connectors` section, tick the third-party shipping carrier's checkbox to install it. Multiple third-party shipping connectors can be selected at once. Then, click :guilabel:`Save`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:82
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:80
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:77
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`Delivery methods <../setup_configuration>` can also be integrated with operations in the *Sales*, *eCommerce*, and *Website* apps. To install, refer to the :ref:`install apps and modules <general/install>` documentation."
 msgstr ""
 
@@ -12198,107 +12310,263 @@ msgstr ""
 msgid "Options of available shipping connectors in Odoo."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:93
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:91
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:88
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Delivery method"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:95
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:93
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:90
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "To configure the API credentials, and activate the shipping carrier, begin by going to :menuselection:`Inventory app --> Configuration --> Shipping Methods`, and select the desired delivery method."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:100
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:98
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:95
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "The list often includes **two** delivery methods from the same :guilabel:`Provider`: one for international shipping and one for domestic shipping."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:103
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:101
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:98
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Additional delivery methods can be created for specific purposes, such as :doc:`packaging <../../product_management/configure/packaging>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:107
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:105
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:102
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`Configure delivery methods <../setup_configuration>`"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:110
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:108
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:105
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Ensure the delivery method is published when it should be available on the *Website* app. To publish a delivery method on the website, click the desired delivery method, then click the :guilabel:`Unpublished` smart button. Doing so changes that smart button to read: :guilabel:`Published`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:115
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:113
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:110
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "The :guilabel:`Shipping Method` page contains details about the provider, including:"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:117
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:115
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:112
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Shipping Method` (*Required field*): the name of the delivery method (e.g. `FedEx US`, `FedEx EU`, etc.)."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:119
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:117
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:114
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Website`: configure shipping methods for an *eCommerce* page that is connected to a specific website in the database. Select the applicable website from the drop-down menu, or leave it blank to apply the method to all web pages."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:122
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:120
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:117
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Provider` (*Required field*): choose the third-party delivery service, like FedEx. Upon choosing a provider, the :guilabel:`Integration Level`, :guilabel:`Invoicing Policy` and :guilabel:`Insurance Percentage` fields become available."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:125
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:123
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:120
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Integration Level`: choose :guilabel:`Get Rate` to simply get an :ref:`estimated shipment cost <inventory/shipping_receiving/third-party-so>` on an |SO| or invoice."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:129
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:127
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:124
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Select :guilabel:`Get Rate and Create Shipment` to also :doc:`generate shipping labels <labels>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:134
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:132
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:129
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Delivery Product` (*Required field*): the delivery charge name that is added to the |SO| or invoice."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:136
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:134
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:131
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Invoicing Policy`: select and calculate an :guilabel:`Estimated cost` of shipping directly from the shipping carrier. If the :guilabel:`Real cost` of shipping is wanted instead, refer to :doc:`Invoice real shipping costs <invoicing>` document."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:139
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:137
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:134
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Margin on Rate`: specify an additional percentage amount added to the base shipping rate to cover extra costs, such as handling fees, packaging materials, exchange rates, etc."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:141
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:139
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:136
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Free if order amount is above`: enables free shipping for orders surpassing a specified amount entered in the corresponding :guilabel:`Amount` field."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:143
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:141
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:138
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":guilabel:`Insurance Percentage`: specify a percentage amount of the shipping costs reimbursed to the senders if the package is lost or stolen in transit."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:150
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:148
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:145
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Screenshot of a FedEx shipping method."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:150
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:148
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:145
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "**Shipping Method** configuration page for `FedEx US`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:152
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:150
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:147
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "In the :guilabel:`Configuration` tab, fill out the API credential fields (e.g. API key, password, account number, etc.). Depending on the third-party shipping carrier chosen in the :guilabel:`Provider` field, the :guilabel:`Configuration` tab will contain different required fields. For more details about configuring specific carriers' credentials, refer to the following documents:"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:159
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:157
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:154
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`DHL credentials <dhl_credentials>`"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:160
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:158
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:155
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`Sendcloud credentials <sendcloud_shipping>`"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:161
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:159
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:156
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`UPS credentials <ups_credentials>`"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:166
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:164
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:161
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Production environment"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:168
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:166
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:163
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "With the delivery method details configured, click the :guilabel:`Test Environment` smart button to set it to :guilabel:`Production Environment`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:172
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:170
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:167
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Setting the delivery method to :guilabel:`Production` creates **real** shipping labels, and users are at risk of being charged through their carrier account (e.g. UPS, FedEx, etc.) **before** users charge customers for shipping. Verify all configurations are correct before launching the delivery method to :guilabel:`Production`."
 msgstr ""
 
@@ -12306,11 +12574,23 @@ msgstr ""
 msgid "Show the \"Test Environment\" smart button."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:186
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:184
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:181
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Ensure the warehouse's :guilabel:`Address` (including ZIP code) and :guilabel:`Phone` number are entered accurately. To do that, go to :menuselection:`Inventory app --> Configuration --> Warehouses`, and select the desired warehouse."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:190
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:188
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:185
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "On the warehouse configuration page, open the warehouse contact page by clicking the :guilabel:`Company` field."
 msgstr ""
 
@@ -12318,7 +12598,13 @@ msgstr ""
 msgid "Highlight the \"Company\" field."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:197
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:195
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:192
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Verify that the :guilabel:`Address` and :guilabel:`Phone` number are correct, as they are required for the shipping connector to work properly."
 msgstr ""
 
@@ -12326,15 +12612,33 @@ msgstr ""
 msgid "Show company address and phone number."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:207
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:205
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:202
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Product weight"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:209
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:207
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:204
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "For the carrier integration to work properly, specify the weight of products by going to :menuselection:`Inventory app --> Products --> Products`, and selecting the desired product."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:212
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:210
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:207
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Then, switch to the :guilabel:`Inventory` tab, and define the :guilabel:`Weight` of the product in the :guilabel:`Logistics` section."
 msgstr ""
 
@@ -12342,23 +12646,53 @@ msgstr ""
 msgid "Display the \"Weight\" field in the Inventory tab of the product form."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:220
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:218
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:215
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Apply third-party shipping carrier"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:222
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:220
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:217
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Shipping carriers can be applied on a :abbr:`SO (Sales Order)`, invoice, or delivery order."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:224
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:222
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:219
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "After configuring the third-party carrier's :ref:`delivery method <inventory/shipping_receiving/configure-delivery-method>` in Odoo, create or navigate to a quotation by going to :menuselection:`Sales app --> Orders --> Quotations`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:231
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:229
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:226
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Sales order"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:233
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:231
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:228
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "To assign a third-party shipping carrier, and get an estimated cost of shipping, begin by going to :menuselection:`Sales app --> Orders --> Quotations`. Create or select an existing quotation, and add the cost of shipping through a third-party carrier to a quotation, by clicking the :guilabel:`Add Shipping` button in the bottom-right corner of the :guilabel:`Order Lines` tab."
 msgstr ""
 
@@ -12366,35 +12700,83 @@ msgstr ""
 msgid "Show the \"Add shipping\" button at the bottom of a quotation."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:242
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:240
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:237
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "In the resulting :guilabel:`Add a shipping method` pop-up window, select the intended carrier from the :guilabel:`Shipping Method` drop-down menu. The :guilabel:`Cost` field is automatically filled based on:"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:246
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:244
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:241
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "the amount specified in the :guilabel:`Total Order Weight` field (if it is not provided, the sum of :ref:`product weights <inventory/shipping_receiving/configure-weight>` in the order is used)"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:248
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:246
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:243
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "the distance between the warehouse's :ref:`source address <inventory/shipping_receiving/configure-source-address>` and the customer's address."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:253
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:251
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:248
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "After selecting a third-party provider in the :guilabel:`Shipping Method` field, click :guilabel:`Get Rate` in the :guilabel:`Add a shipping method` pop-up window to get the estimated cost through the shipping connector. Then, click the :guilabel:`Add` button to add the delivery charge to the |SO| or invoice."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:259
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:257
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:254
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`Charge customers for shipping after product delivery <invoicing>`"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:266
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:264
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:261
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "For users making shipments without installing the *Sales* app, assign the shipping carrier to the delivery order, by first going to the :menuselection:`Inventory` app. Then, from the :guilabel:`Inventory Overview` dashboard, select the :guilabel:`Delivery Orders` operation type, and choose the desired delivery order that is not already marked as :guilabel:`Done` or :guilabel:`Cancelled`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:272
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:270
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:267
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "In the :guilabel:`Additional info` tab, set the :guilabel:`Carrier` field to the desired third-party shipping carrier. When the delivery method is set to :ref:`production mode <inventory/shipping_receiving/configure-delivery-method>`, a :guilabel:`Tracking Reference` is provided."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:278
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:276
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:273
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid ":doc:`Generate shipping labels <labels>`"
 msgstr ""
 
@@ -12402,39 +12784,93 @@ msgstr ""
 msgid "Show the delivery order's \"Additional info\" tab."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:287
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:285
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:282
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Troubleshooting"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:289
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:287
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:284
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Since shipping connectors can sometimes be complex to set up, here are some checks to try when things are not working as expected:"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:292
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:290
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:287
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Ensure the :ref:`warehouse information <inventory/shipping_receiving/configure-source-address>` (e.g., address and phone number) in Odoo is correct **and** matches the records saved in the shipping provider's website."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:295
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:293
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:290
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Verify that the :ref:`package type <inventory/warehouses_storage/package-type>` and parameters are valid for the shipping carrier. To check, ensure the shipment can be directly created on the shipping carrier's website."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:298
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:296
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:293
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "When encountering a price mismatch between Odoo's estimated cost and the provider's charge, first ensure the delivery method is set to :ref:`production environment <inventory/shipping_receiving/production-env>`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:302
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:300
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:297
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Then, create the shipment in both the carrier's website and Odoo, and verify the prices are the same across Odoo, the shipping provider, and in the *debug logs*."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:306
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:304
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:301
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "When checking for a price mismatch in the debug logs, if the request says the package weighs six kilograms, but the response from FedEx says the package weights seven kilograms, it concludes that the issue is on FedEx's side."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:311
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:309
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:306
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Debug log"
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:313
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:311
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:308
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Track shipping data inconsistencies by activating debug logging. To do that, go to the delivery method's configuration page (:menuselection:`Inventory app --> Configuration --> Shipping Method`), and select the desired shipping method. Click the :guilabel:`No Debugging` smart button to activate :guilabel:`Debug Requests`."
 msgstr ""
 
@@ -12442,11 +12878,23 @@ msgstr ""
 msgid "Show the \"No Debug\" smart button."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:322
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:320
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:317
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "With :guilabel:`Debug Requests` activated, each time the shipping connector is used to estimate the cost of shipping, records are saved in the :guilabel:`Logging` report. To access the report, turn on :ref:`developer mode <developer-mode>`, and go to :menuselection:`Settings app --> Technical --> Database Structure section --> Logging`."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:328
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:326
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:323
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Logs are created for a shipping method each time the :ref:`Get Rate <inventory/shipping_receiving/third-party-rate>` button is clicked on :abbr:`SOs (Sales Orders)` and invoices, **and** when a customer adds the shipping carrier to their order through the *Website* app."
 msgstr ""
 
@@ -12454,7 +12902,13 @@ msgstr ""
 msgid "Show how to find the \"Logging\" option from the \"Technical\" menu."
 msgstr ""
 
+<<<<<<< 17.0
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:337
+||||||| db38d060455d3ba82c560dafdbe399f85290808b
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:335
+=======
+#: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/third_party_shipper.rst:332
+>>>>>>> 18a87b7bbe85df0203b447a76104422604f2bad1
 msgid "Click the *HTTP request* line item to open a detailed page, and verify the correct information is sent from Odoo to the shipping carrier. In the *HTTP response*, verify that the same information is received."
 msgstr ""
 
