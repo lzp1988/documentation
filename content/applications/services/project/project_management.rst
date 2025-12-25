@@ -21,6 +21,11 @@ Configuration
 Open the **Project** app and click :guilabel:`Create` to start a new project. Enter a
 :guilabel:`Name` for your project and click :guilabel:`Create Project`.
 
+Open the project settings (:guilabel:`⋮` on the project card, then :guilabel:`Settings`) and
+complete key project fields, such as the :guilabel:`Project Manager`, :guilabel:`Planned Date`, and
+the :guilabel:`Name of the tasks`. Use the project to structure work into a hierarchy of tasks and
+sub-tasks, as described in :doc:`tasks/task_creation` and :doc:`tasks/sub-tasks`.
+
 You can customize your existing **projects** from the dashboard by clicking the drop-down toggle
 button (:guilabel:`⋮`) on your project's **card**.
 
@@ -62,6 +67,20 @@ Additionally, you can mark the project as :guilabel:`Favorite`, allowing you to 
 
 Further settings are available under the :guilabel:`Settings` tab. Most of them are *only* available
 depending on the activated apps.
+
+Track stage progress with Kanban
+================================
+
+Project tasks are tracked in the Kanban view. Drag tasks across stages to follow progress at a
+glance and update task statuses as they move through the workflow. For more details on stages and
+statuses, see :doc:`tasks/task_stages_statuses`.
+
+Visualize schedules with Planning
+=================================
+
+For projects that need resource or schedule visibility, use the **Planning** app's Gantt view. Open
+the Planning app and review shifts in the Gantt schedule to visualize workload and timing. See
+:ref:`planning/shifts` for details.
 
 Scheduling activities
 =====================
